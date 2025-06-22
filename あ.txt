@@ -1,0 +1,14 @@
+# パターン1: python myproject/main.py のとき
+
+カレント: myproject/
+sys.path: ["myproject/"]
+
+import myproject.utils  ❌ ← myproject/myproject/utils を探してしまう！
+
+
+# パターン2: python -m myproject.main のとき
+
+カレント: プロジェクトルート/
+sys.path: ["./"]
+
+import myproject.utils ✅ ← ちゃんと myproject/utils を見つけてくれる！
