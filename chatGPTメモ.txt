@@ -1,0 +1,15 @@
+myproject/
+│
+├── .venv/                 ← 仮想環境（Poetry管理）
+├── .vscode/               ← VSCodeの設定（あれば）
+├── myproject/             ← 実際のアプリケーションコード（モジュール）
+│   ├── __init__.py
+│   ├── main.py
+│   └── utils.py
+│
+├── tests/                 ← テストコード（pytestなど）
+│   └── test_main.py
+│
+├── pyproject.toml         ← プロジェクト設定（Poetry）
+├── poetry.lock
+└── README.md
